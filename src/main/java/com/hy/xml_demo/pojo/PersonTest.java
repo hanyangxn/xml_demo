@@ -25,6 +25,12 @@ public class PersonTest {
     private Person person;
     @Resource(name = "person")
     private Person person2;
+
+    @Resource(name = "person1")
+    private Person person3;
+    @Resource(name = "person1")
+    private Person person4;
+
     @Test
     public void testSingleBean(){
         //通过application进行匹配
@@ -32,6 +38,7 @@ public class PersonTest {
 //        Person person=(Person)cfg.getBean("person");
 //        Person person2=(Person)cfg.getBean("person");
 //        System.out.println(person);
+        assertTrue(person3 == person4);
         assertTrue(person == person2);
     }
 }
