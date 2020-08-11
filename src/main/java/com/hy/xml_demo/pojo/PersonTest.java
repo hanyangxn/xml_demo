@@ -3,6 +3,7 @@ package com.hy.xml_demo.pojo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 import javax.annotation.Resource;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -33,7 +34,7 @@ public class PersonTest {
 //        Person person=(Person)cfg.getBean("person");
 //        Person person2=(Person)cfg.getBean("person");
 //        System.out.println(person);
-        assertTrue(person3 == person4);
-        assertTrue(person == person2);
+        assertTrue(person3 != person4);
+        assertTrue(person != person2);
     }
 }
