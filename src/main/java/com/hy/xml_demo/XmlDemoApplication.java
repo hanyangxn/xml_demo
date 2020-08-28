@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @SpringBootApplication
-@ServletComponentScan
+//@ServletComponentScan
 public class XmlDemoApplication {
 
     public static void main(String[] args) {

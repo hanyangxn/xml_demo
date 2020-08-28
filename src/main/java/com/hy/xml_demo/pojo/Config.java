@@ -14,12 +14,13 @@ import javax.annotation.Resource;
  * @date 2020/08/11
  */
 @Configuration
+//注册person，加载xml
 @ImportResource(locations= {"classpath:test.xml"})
 public class Config {
 
     @Resource
     Environment environment;
-
+    //注册person1
     @Bean(name = "person1")
     //@Scope 与 extends AbstractFactoryBean 重写 isSingleton方法 实现功能一样
     @Scope(value="prototype")
